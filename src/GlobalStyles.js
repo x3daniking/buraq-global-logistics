@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   button{
+		font-family: "Plus Jakarta Sans";
     border: none;
     outline: none;
     cursor: pointer;
@@ -35,5 +36,3 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export default GlobalStyle;
-
-
