@@ -79,11 +79,18 @@ export const OurServicesCard = styled.div`
 		font-size: 16px;
 		font-weight: 600;
 		padding: 10px 20px;
+
+		&:hover {
+			transition: all 0.1s ease;
+			background-color: #967b44;
+			border: 1px solid #fff;
+			color: #fff;
+		}
 	}
 
 	&:hover {
 		cursor: pointer;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.1s ease-in-out;
 		border-right: 5px solid #000;
 		border-bottom: 5px solid #000;
 		box-shadow: rgba(0, 0, 0, 0.65) 3px 3px 9px 0px;
