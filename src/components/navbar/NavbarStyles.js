@@ -40,6 +40,11 @@ export const Menu = styled.div`
 		color: #000;
 		font-size: 16px;
 		font-weight: 600;
+		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+		&:hover {
+			background: #fff;
+		}
 	}
 `;
 
@@ -50,7 +55,7 @@ export const MenuItem = styled(NavLink)`
 	line-height: 24px;
 	font-weight: 500;
 
-	/* &.active {
-    color: #000;
-} */
+	&.active {
+    color: #977d44;
+}
 `;

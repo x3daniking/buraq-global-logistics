@@ -51,6 +51,7 @@ const AutoSwiper = () => {
 	];
 
 	return (
+		<SwiperContainer>
 		<StyledSwiper
 			modules={[Autoplay]}
 			spaceBetween={30}
@@ -62,22 +63,31 @@ const AutoSwiper = () => {
 			{slides.map((slide) => (
 				<SwiperSlide key={slide.id}>
 					<Slide imageUrl={slide.imageUrl}>
-						<SwiperOverly>
-							<SwiperText>
-								<h2>{slide.title}</h2>
-								<p>{slide.heading}</p>
-								<ButtonContainer>
-									<PrimaryButton>Contact Us</PrimaryButton>
-									<SecondaryButton>Trucking Services</SecondaryButton>
-								</ButtonContainer>
-							</SwiperText>
-						</SwiperOverly>
 					</Slide>
 				</SwiperSlide>
 			))}
 		</StyledSwiper>
+			<SwiperOverly>
+				<SwiperText>
+					<h2>Buraq proudly offers a wide array of logistics solutions</h2>
+					<p>Buraq Global Logistics is a privately owned, progressive company specializing in handling flatbed freight. Our logistics team will match your freight needs to one of our carriers to get your products delivered safely and on time.</p>
+					<ButtonContainer>
+						<PrimaryButton>Contact Us</PrimaryButton>
+						<SecondaryButton>Trucking Services</SecondaryButton>
+					</ButtonContainer>
+				</SwiperText>
+			</SwiperOverly>
+	</SwiperContainer>
 	);
 };
+
+
+const SwiperContainer = styled.div`
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.7);
+	position: relative;
+`;
 
 const StyledSwiper = styled(Swiper)`
 	width: 100%;
@@ -90,7 +100,6 @@ const Slide = styled.div`
 	background-image: url(${(props) => props.imageUrl});
 	background-size: cover;
 	background-position: center;
-	position: relative;
 `;
 
 const SwiperOverly = styled.div`
@@ -103,6 +112,9 @@ const SwiperOverly = styled.div`
 	justify-content: center;
 	align-items: center;
 	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
 `;
 
 const SwiperText = styled.div`
@@ -135,24 +147,34 @@ const ButtonContainer = styled.div`
 	align-items: center;
 	gap: 20px;
 `;
-
 const PrimaryButton = styled.button`
-	background: #977d44;
-	padding: 12px 28px;
-	border-radius: 8px;
-	color: #000;
-	font-size: 16px;
-	font-weight: 600;
+  background: #977d44;
+  padding: 12px 28px;
+  border-radius: 8px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background: #fff;
+  }
 `;
 
 const SecondaryButton = styled.button`
-	padding: 12px 28px;
-	border-radius: 8px;
-	color: #977d44;
-	font-size: 16px;
-	font-weight: 600;
-	border: 1px solid #977d44;
-	background: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  color: #977d44;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #977d44;
+  background: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background: #fff;
+  }
 `;
+
 
 export default AutoSwiper;
