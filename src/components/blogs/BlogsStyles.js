@@ -1,71 +1,49 @@
 import styled from 'styled-components';
 
-export const ContactUsContainer = styled.div`
+export const BlogContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
-	padding: 100px 20px;
+	background: #fff;
+	padding: 150px 20px 100px 20px;
 	width: 100%;
 `;
 
-export const ContactUsContent = styled.div`
+export const BlogContent = styled.div`
 	box-shadow: rgba(0, 0, 0, 0.65) 3px 3px 9px 0px;
 	border-radius: 20px;
 	padding: 40px;
 	width: 100%;
-	max-width: 1180px;
-    background: #fff;
-display: flex;
-justify-content: space-between;
-gap: 50px;
-`;
-
-export const ContactUsContentLeft = styled.div`
+	max-width: 1400px;
 display: flex;
 flex-direction: column;
-gap: 15px;
-
-h1{
-    color: #000000;
-    font-size: 35px;
-    font-weight: 600;
-}
+gap: 30px;
 
 h2{
-    color: #000000;
-    font-size: 30px;
-    font-weight: 400;
+    color: #000;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
 }
 
 p{
-    color: #000000;
+    color: #000;
     font-size: 16px;
-    line-height: 24px;
     font-weight: 400;
+    line-height: 24px;
 }
 
-h3{
-    color: #000000;
-    font-size: 26px;
-    font-weight: 500;
-    margin: 15px 0 0 0;
-}
-`;
-
-export const ContactUsIcons = styled.div`
-display: flex;
-align-items: center;
-gap: 10px;
-
-p{
-    color: #54595F;
-    font-size: 17px;
-    font-weight: 500;
+img{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, .65);
 }
 `;
 
-export const ContactUsFormContainer = styled.form`
+export const BlogFormContainer = styled.form`
 display: flex;
 flex-direction: column;
 gap: 25px;
@@ -92,19 +70,8 @@ input{
     color: #000000;
     font-size: 16px;
     border: 1px solid #69727d;
-    padding: 8px 10px;
+    padding: 10px 15px;
     border-radius: 3px;
-}
-input[type='number']::-webkit-outer-spin-button,
-input[type='number']::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-
-/* Standard property for compatibility */
-input[type='number'] {
-  appearance: textfield;
 }
 `;
 

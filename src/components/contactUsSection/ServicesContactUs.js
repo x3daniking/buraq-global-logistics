@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContactUsButtonContainer, ContactUsPrimaryButton, ContactUsSecondaryButton, ContactUsSectionContainer, ContactUsSectionContent } from './ContactUsStyles'
+import { ContactUsButtonContainer, ContactUsSectionContainer, ContactUsSectionContent } from './ContactUsSectionStyles'
 
 
 const ServicesContactUs = () => {

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import ServicesHeroSection from './servicesHeroSection';
 import ServicesFilterBar from './ServicesFilterBar';
-import ServicesContactUs from '../contactUs/ServicesContactUs';
+import ServicesContactUs from '../contactUsSection/ServicesContactUs';
 import ShortHaulFreight from './servicesComponents/ShortHaulFreight';
 import LongHaulFreight from './servicesComponents/LongHaulFreight';
 import FlatbedTrucking from './servicesComponents/FlatbedTrucking';

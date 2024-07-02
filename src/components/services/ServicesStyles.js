@@ -37,8 +37,8 @@ export const HeroOverly = styled.div`
 
 export const HeroText = styled.div`
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	gap: 20px;
 	width: 100%;
@@ -51,6 +51,7 @@ export const HeroText = styled.div`
 		font-weight: 700;
 		line-height: 80px;
 		max-width: 660px;
+		text-align: center;
 	}
 	p {
 		color: #ffffff;

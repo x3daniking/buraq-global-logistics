@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContactUsSectionContainer, ContactUsSectionContent } from './ContactUsStyles'
+import { ContactUsSectionContainer, ContactUsSectionContent } from './ContactUsSectionStyles'
 
 
 const ContactUsSection = () => {
