@@ -73,16 +73,18 @@ export const FooterIcons = styled.div`
 `;
 
 export const FooterIcon = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #967b44;
-	border-radius: 5px;
-	padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #967b44;
+  border-radius: 5px;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out;
 
-	&:hover {
-		cursor: pointer;
-	}
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 `;
 
 export const Facebook = styled(FaFacebookF)`

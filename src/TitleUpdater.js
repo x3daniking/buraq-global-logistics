@@ -11,16 +11,16 @@ const TitleUpdater = () => {
         document.title = 'BURAQ GLOBAL LOGISTICS';
         break;
       case '/services':
-        document.title = 'Services - BURAQ SERVICE';
+        document.title = 'Services - BURAQ GLOBAL LOGISTICS';
         break;
-      case '/about':
-        document.title = 'About - BURAQ SERVICE';
+      case '/about-us':
+        document.title = 'About - BURAQ GLOBAL LOGISTICS';
         break;
       case '/contact':
-        document.title = 'Contact - BURAQ SERVICE';
+        document.title = 'Contact - BURAQ GLOBAL LOGISTICS';
         break;
       default:
-        document.title = 'BURAQ SERVICE';
+        document.title = 'BURAQ GLOBAL LOGISTICS';
     }
   }, [location]);
 

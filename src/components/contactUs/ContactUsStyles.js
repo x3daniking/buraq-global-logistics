@@ -29,6 +29,13 @@ padding: 30px; */
 		font-weight: 700;
 		line-height: 1.2;
 	}
+	
+	h3 {
+		color: #977d44;
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 1.2;
+	}
 
 	p {
 		color: #000;
@@ -46,5 +53,33 @@ padding: 30px; */
 		border-radius: 10px;
 		height: 50px;
 		width: 170px;
+		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+		&:hover {
+			background: #000;
+		}
+	}
+`;
+
+export const ContactUsButtonContainer = styled.div`
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	
+	button {
+		color: #fff;
+		font-size: 18px;
+		font-weight: 400;
+		margin: 15px 0 0 0;
+		background: #977d44;
+		border-radius: 10px;
+		height: 50px;
+		width: 200px;
+		padding: 0 20px;
+		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+		&:hover {
+			background: #000;
+		}
 	}
 `;
