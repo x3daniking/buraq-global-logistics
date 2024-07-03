@@ -1,18 +1,17 @@
-import React from 'react'
-import AbouttUsHeroSection from './AboutUsHeroSection'
-import AboutUsSectionTop from './AboutUsSectionTop'
-import AboutUsSectionBottom from './AboutUsSectionBottom'
-import ContactUs from '../contactUs/ContactUs'
+import React from "react";
+import AbouttUsHeroSection from "./AboutUsHeroSection";
+import AboutUsSectionTop from "./AboutUsSectionTop";
+import AboutUsSectionBottom from "./AboutUsSectionBottom";
+import ContactUs from "../contactUs/ContactUs";
 
 const AboutUs = () => {
-  return (
-    <>
-      <AbouttUsHeroSection />
-      <AboutUsSectionTop />
-      <AboutUsSectionBottom />
-      <ContactUs />
-    </>
-  )
-}
+	return (
+		<>
+			<AbouttUsHeroSection />
+			<AboutUsSectionBottom />
+			<ContactUs />
+		</>
+	);
+};
 
-export default AboutUs
+export default AboutUs;

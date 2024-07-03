@@ -1,15 +1,22 @@
 import React from "react";
 import truck3 from "../../assets/images/trucks/truck3.jpg";
-import { ButtonContainer, HeroContainer, HeroOverly, HeroSection, HeroSectionBackground, HeroText, PrimaryButton, SecondaryButton } from "./ServicesStyles";
-
+import {
+	ButtonContainer,
+	HeroContainer,
+	HeroOverly,
+	HeroSection,
+	HeroSectionBackground,
+	HeroText,
+	PrimaryButton,
+	SecondaryButton,
+} from "./ServicesStyles";
 
 const ServicesHeroSection = () => {
 	return (
 		<HeroContainer>
-				<HeroSection>
-					<HeroSectionBackground imageUrl={truck3}>
-					</HeroSectionBackground>
-				</HeroSection>
+			<HeroSection>
+				<HeroSectionBackground imageUrl={truck3}></HeroSectionBackground>
+			</HeroSection>
 			<HeroOverly>
 				<HeroText>
 					<h2>Trucking, Freight & Transportation Solutions</h2>
@@ -20,9 +27,8 @@ const ServicesHeroSection = () => {
 					</ButtonContainer> */}
 				</HeroText>
 			</HeroOverly>
-	</HeroContainer>
+		</HeroContainer>
 	);
 };
-
 
 export default ServicesHeroSection;

@@ -24,10 +24,7 @@ const Footer = () => {
 						src={logo}
 						alt="logo"
 					/>
-					<p>
-						We at Buraq Services are dedicated to providing reliable and efficient assistance to truck
-						drivers and fleet operators in need of roadside support
-					</p>
+					<p>Delivering dependable logistics and freight solutions for every journey</p>
 					<FooterMenu>
 						<FooterMenuItem to="/">Home</FooterMenuItem>
 						<FooterMenuItem to="/services">Services</FooterMenuItem>
@@ -38,13 +35,22 @@ const Footer = () => {
 				</FooterLeft>
 				<FooterRight>
 					<FooterIcons>
-						<FooterIcon to='https://twitter.com/BuraqGlobal' target="_blank" rel="noopener noreferrer">
+						<FooterIcon
+							to="https://twitter.com/BuraqGlobal"
+							target="_blank"
+							rel="noopener noreferrer">
 							<Twitter />
 						</FooterIcon>
-						<FooterIcon to='https://www.linkedin.com/company/buraq-global-logistics' target="_blank" rel="noopener noreferrer">
+						<FooterIcon
+							to="https://www.linkedin.com/company/buraq-global-logistics"
+							target="_blank"
+							rel="noopener noreferrer">
 							<Linkedin />
 						</FooterIcon>
-						<FooterIcon to='https://www.instagram.com/buraqgloballogistics' target="_blank" rel="noopener noreferrer">
+						<FooterIcon
+							to="https://www.instagram.com/buraqgloballogistics"
+							target="_blank"
+							rel="noopener noreferrer">
 							<Instagram />
 						</FooterIcon>
 					</FooterIcons>

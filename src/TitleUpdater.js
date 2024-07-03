@@ -1,30 +1,30 @@
 // TitleUpdater.js
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const TitleUpdater = () => {
-  const location = useLocation();
+	const location = useLocation();
 
-  useEffect(() => {
-    switch (location.pathname) {
-      case '/':
-        document.title = 'BURAQ GLOBAL LOGISTICS';
-        break;
-      case '/services':
-        document.title = 'Services - BURAQ GLOBAL LOGISTICS';
-        break;
-      case '/about-us':
-        document.title = 'About - BURAQ GLOBAL LOGISTICS';
-        break;
-      case '/contact':
-        document.title = 'Contact - BURAQ GLOBAL LOGISTICS';
-        break;
-      default:
-        document.title = 'BURAQ GLOBAL LOGISTICS';
-    }
-  }, [location]);
+	useEffect(() => {
+		switch (location.pathname) {
+			case "/":
+				document.title = "Buraq Global Logistics";
+				break;
+			case "/services":
+				document.title = "Services - Buraq Global Logistics";
+				break;
+			case "/about-us":
+				document.title = "About - Buraq Global Logistics";
+				break;
+			case "/contact":
+				document.title = "Contact - Buraq Global Logistics";
+				break;
+			default:
+				document.title = "Buraq Global Logistics";
+		}
+	}, [location]);
 
-  return null;
+	return null;
 };
 
 export default TitleUpdater;
