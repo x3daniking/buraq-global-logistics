@@ -1,5 +1,5 @@
 import React from "react";
-import { OurServicesCard, OurServicesCards, OurServicesContainer } from "./OurServicesStyles";
+import { OurServicesCard, OurServicesCards, OurServicesContainer, ServicesCardButton } from "./OurServicesStyles";
 import { CardsData } from "./OurServicesCardsData";
 
 const OurServices = () => {
@@ -21,7 +21,7 @@ const OurServices = () => {
 						{/* <img src={cardData.image} alt='service-img' /> */}
 						<h3>{cardData.title}</h3>
 						<p>{cardData.heading}</p>
-						<button>Get Started</button>
+						<ServicesCardButton to={cardData.servicesLink}>Get Started</ServicesCardButton>
 					</OurServicesCard>
 				))}
 			</OurServicesCards>
