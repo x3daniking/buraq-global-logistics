@@ -10,6 +10,7 @@ import truck5 from "../../assets/images/trucks/truck5.jpg";
 
 // import required modules
 import { Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const AutoSwiper = () => {
 	const slides = [
@@ -72,8 +73,8 @@ const AutoSwiper = () => {
 					<h2>Buraq proudly offers a wide array of logistics solutions</h2>
 					<p>Buraq Global Logistics is a privately owned, progressive company specializing in handling flatbed freight. Our logistics team will match your freight needs to one of our carriers to get your products delivered safely and on time.</p>
 					<ButtonContainer>
-						<PrimaryButton>Contact Us</PrimaryButton>
-						<SecondaryButton>Trucking Services</SecondaryButton>
+						<PrimaryButton to='/contact'>Contact Us</PrimaryButton>
+						<SecondaryButton to='services'>Trucking Services</SecondaryButton>
 					</ButtonContainer>
 				</SwiperText>
 			</SwiperOverly>
@@ -147,13 +148,14 @@ const ButtonContainer = styled.div`
 	align-items: center;
 	gap: 20px;
 `;
-const PrimaryButton = styled.button`
+const PrimaryButton = styled(Link)`
   background: #977d44;
   padding: 12px 28px;
   border-radius: 8px;
   color: #000;
   font-size: 16px;
   font-weight: 600;
+  text-decoration: none;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
   &:hover {
@@ -161,7 +163,7 @@ const PrimaryButton = styled.button`
   }
 `;
 
-const SecondaryButton = styled.button`
+const SecondaryButton = styled(Link)`
   padding: 12px 28px;
   border-radius: 8px;
   color: #977d44;
@@ -169,6 +171,7 @@ const SecondaryButton = styled.button`
   font-weight: 600;
   border: 1px solid #977d44;
   background: none;
+  text-decoration: none;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
   &:hover {

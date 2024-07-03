@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const FooterSection = styled.div`
 	display: flex;
@@ -59,7 +59,7 @@ export const FooterRight = styled.div`
 		text-align: center;
 		color: #000000;
 		font-size: 18px;
-		font-weight: 600;
+		font-weight: 400;
 		line-height: 0.1em;
 		margin-top: 5px;
 	}
@@ -72,7 +72,7 @@ export const FooterIcons = styled.div`
 	gap: 7px;
 `;
 
-export const FooterIcon = styled.div`
+export const FooterIcon = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +80,7 @@ export const FooterIcon = styled.div`
   border-radius: 5px;
   padding: 5px;
   transition: transform 0.3s ease-in-out;
+  text-decoration: none;
 
   &:hover {
     cursor: pointer;

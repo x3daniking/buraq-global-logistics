@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Header = styled.div`
@@ -32,20 +32,6 @@ export const Menu = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 30px;
-
-	button {
-		background: #977d44;
-		padding: 12px 28px;
-		border-radius: 8px;
-		color: #000;
-		font-size: 16px;
-		font-weight: 600;
-		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-
-		&:hover {
-			background: #fff;
-		}
-	}
 `;
 
 export const MenuItem = styled(NavLink)`
@@ -57,5 +43,20 @@ export const MenuItem = styled(NavLink)`
 
 	&.active {
     color: #977d44;
+}
+`;
+
+export const MenuButton = styled(Link)`
+text-decoration: none;
+background: #977d44;
+padding: 12px 28px;
+border-radius: 8px;
+color: #000;
+font-size: 16px;
+font-weight: 600;
+transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+&:hover {
+	background: #fff;
 }
 `;

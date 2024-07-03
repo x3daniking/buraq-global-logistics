@@ -38,13 +38,13 @@ const Footer = () => {
 				</FooterLeft>
 				<FooterRight>
 					<FooterIcons>
-						<FooterIcon>
+						<FooterIcon to='https://twitter.com/BuraqGlobal' target="_blank" rel="noopener noreferrer">
 							<Twitter />
 						</FooterIcon>
-						<FooterIcon>
+						<FooterIcon to='https://www.linkedin.com/company/buraq-global-logistics' target="_blank" rel="noopener noreferrer">
 							<Linkedin />
 						</FooterIcon>
-						<FooterIcon>
+						<FooterIcon to='https://www.instagram.com/buraqgloballogistics' target="_blank" rel="noopener noreferrer">
 							<Instagram />
 						</FooterIcon>
 					</FooterIcons>
