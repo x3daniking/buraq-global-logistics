@@ -1,5 +1,6 @@
 {
   "name": "buraq-global-logistics",
+  "homepage": "https://buraqservice.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
