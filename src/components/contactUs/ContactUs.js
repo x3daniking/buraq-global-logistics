@@ -2,7 +2,6 @@ import React from 'react'
 import { ContactUsIcons, ContactUsContainer, ContactUsContent, ContactUsContentLeft } from './ContactUsStyles'
 import ContactUsForm from './ContactUsForm';
 import phone from '../../assets/images/phone.png'
-import message from '../../assets/images/message.png'
 
 
 const ContactUs = () => {

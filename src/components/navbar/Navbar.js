@@ -1,6 +1,6 @@
 // src/components/Navbar.js
 import React from "react";
-import { Header, Logo, Menu, MenuItem, Nav } from "./NavbarStyles";
+import { Header, Logo, Menu, MenuButton, MenuItem, Nav } from "./NavbarStyles";
 import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
 					<MenuItem to="/about-us">About us</MenuItem>
 					<MenuItem to="/contact">Contact us</MenuItem>
 					<MenuItem to="/blogs">Blogs</MenuItem>
-					<button>Drive With Us</button>
+					<MenuButton to='/drive-with-us'>Drive With Us</MenuButton>
 				</Menu>
 			</Nav>
 		</Header>

@@ -13,6 +13,8 @@ import BlogsPage from './pages/blogsPage/BlogsPage';
 import BlogOne from './components/blogs/BlogOne';
 import BlogTwo from './components/blogs/BlogTwo';
 import BlogThree from './components/blogs/BlogThree';
+import DriveWithUsPage from './pages/driveWithUsPage/DriveWithUsPage';
+import MaintainanceServices from './components/maintainanceServices/MaintainanceServices';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
             <Route path="/effective-solutions-for-supply-chain-management/" element={<BlogOne />} />
             <Route path="/essential-guidelines-for-trucking-and-towing-professionals/" element={<BlogTwo />} />
             <Route path="/top-tips-for-efficient-trucking-operations/" element={<BlogThree />} />
+            <Route path="/drive-with-us" element={<DriveWithUsPage />} />
+            <Route path="/maintainance-services" element={<MaintainanceServices />} />
           </Routes>
           <Footer />
       </Router>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ContactUsSectionContainer = styled.div`
@@ -43,43 +44,30 @@ padding: 30px; */
 		line-height: 35px;
 		font-weight: 500;
 	}
-
-	button {
-		color: #fff;
-		font-size: 18px;
-		font-weight: 400;
-		margin: 15px 0 0 0;
-		background: #977d44;
-		border-radius: 10px;
-		height: 50px;
-		width: 170px;
-		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-
-		&:hover {
-			background: #000;
-		}
-	}
 `;
 
 export const ContactUsButtonContainer = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 30px;
-	
-	button {
-		color: #fff;
-		font-size: 18px;
-		font-weight: 400;
-		margin: 15px 0 0 0;
-		background: #977d44;
-		border-radius: 10px;
-		height: 50px;
-		width: 200px;
-		padding: 0 20px;
-		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+`;
 
-		&:hover {
-			background: #000;
-		}
-	}
+export const ContactUsButton = styled(Link)`
+text-decoration: none;
+color: #fff;
+font-size: 18px;
+font-weight: 400;
+margin: 15px 0 0 0;
+background: #977d44;
+border-radius: 10px;
+height: 50px;
+width: 200px;
+transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+display: flex;
+justify-content: center;
+align-items: center;
+
+&:hover {
+	background: #000;
+}
 `;
