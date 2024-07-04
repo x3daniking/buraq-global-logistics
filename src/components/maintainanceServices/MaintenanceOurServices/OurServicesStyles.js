@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const MaintainanceOurServicesContainer = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-padding: 100px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 100px 20px;
 `;
 
 export const OurServicesContainer = styled.div`
@@ -70,6 +70,7 @@ export const OurServicesCard = styled.div`
 	img {
 		height: 220px;
 		align-self: flex-start;
+		filter: hue-rotate(280deg);
 	}
 
 	&:hover {
