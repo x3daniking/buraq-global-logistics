@@ -40,6 +40,11 @@ export const BlogContent = styled.div`
 		transform-style: preserve-3d;
 		width: max-content;
 		display: inline-block;
+		filter: hue-rotate(280deg);
+		height: 600px;
+		width: 100%;
+		align-self: center;
+		border-radius: 8px;
 	}
 `;
 

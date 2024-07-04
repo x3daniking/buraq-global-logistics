@@ -70,6 +70,7 @@ export const OurBlogsCard = styled.div`
     border-radius: 8px;
     display: inline-block;
     box-shadow: 3px 3px 9px rgba(0, 0, 0, .65);
+	filter: hue-rotate(280deg);
 	}
 
 	&:hover {

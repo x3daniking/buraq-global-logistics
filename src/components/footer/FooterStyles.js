@@ -18,6 +18,12 @@ export const FooterContainer = styled.div`
 	gap: 30px;
 	width: 100%;
 	max-width: 1120px;
+	
+@media (max-width: 768px) {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 `;
 
 export const FooterLeft = styled.div`
@@ -38,6 +44,16 @@ export const FooterLeft = styled.div`
 		height: 100px;
 		width: 150px;
 	}
+		
+@media (max-width: 768px) {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	p{
+		text-align: center;
+	}
+}
 `;
 
 export const FooterRight = styled.div`
@@ -121,6 +137,12 @@ export const FooterMenu = styled.div`
 		font-size: 16px;
 		font-weight: 600;
 	}
+		
+@media (max-width: 768px) {
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
 `;
 
 export const FooterMenuItem = styled(NavLink)`
