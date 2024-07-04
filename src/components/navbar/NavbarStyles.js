@@ -60,3 +60,21 @@ transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 	background: #fff;
 }
 `;
+export const DropdownMenu = styled.div`
+	position: absolute;
+	background: #977d44;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	border-radius: 8px;
+`;
+export const DropdownItem = styled(Link)`
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	border-radius: 8px;
+
+	&:hover {
+		background-color: #fff;
+	}
+`;

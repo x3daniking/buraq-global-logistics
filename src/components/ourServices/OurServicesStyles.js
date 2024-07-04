@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const OurServicesContainer = styled.div`
@@ -95,4 +96,20 @@ export const OurServicesCard = styled.div`
 		border-bottom: 5px solid #000;
 		box-shadow: rgba(0, 0, 0, 0.65) 3px 3px 9px 0px;
 	}
+`;
+
+export const ServicesCardButton = styled(Link)`
+text-decoration: none;
+background: none;
+border: 1px solid #000;
+border-radius: 10px;
+font-size: 16px;
+font-weight: 600;
+padding: 10px 20px;
+transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+color: #000;
+
+&:hover {
+	background: #977d44;
+}
 `;

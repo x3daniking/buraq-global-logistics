@@ -22,6 +22,12 @@ const DriveWitUsForm = () => {
     }),
     onSubmit: values => {
       console.log(values);
+      if (!values.honey) {
+        // Process form submission
+        console.log(values);
+      } else {
+        console.log('Spam detected');
+      }
     },
   });
 
@@ -104,6 +110,18 @@ const DriveWitUsForm = () => {
                 <FormError>{formik.errors.message}</FormError>
               ) : null}
             </FormField>
+            {/* Honeypot field */}
+            <div style={{ display: 'none' }}>
+              <label htmlFor="honey">Do not fill this out if you are human</label>
+              <input
+                id="honey"
+                name="honey"
+                type="text"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.honey}
+              />
+            </div>
             <FormButton type="submit">Send Message</FormButton>
         </DriveWithUsFormContainer>
       </DriveWithUsContent>

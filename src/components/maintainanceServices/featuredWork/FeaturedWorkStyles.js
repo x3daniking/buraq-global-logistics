@@ -23,4 +23,8 @@ export const FeaturedWorkContainer = styled.div`
     max-width: 700px;
     text-align: center;
  }
+ .image-gallery-slide .image-gallery-image {
+    width: 100%;
+    object-fit: cover;
+}
 `;
