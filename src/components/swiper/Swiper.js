@@ -53,35 +53,37 @@ const AutoSwiper = () => {
 
 	return (
 		<SwiperContainer>
-		<StyledSwiper
-			modules={[Autoplay]}
-			spaceBetween={30}
-			centeredSlides={true}
-			autoplay={{
-				delay: 2000,
-				disableOnInteraction: false,
-			}}>
-			{slides.map((slide) => (
-				<SwiperSlide key={slide.id}>
-					<Slide imageUrl={slide.imageUrl}>
-					</Slide>
-				</SwiperSlide>
-			))}
-		</StyledSwiper>
+			<StyledSwiper
+				modules={[Autoplay]}
+				spaceBetween={30}
+				centeredSlides={true}
+				autoplay={{
+					delay: 2000,
+					disableOnInteraction: false,
+				}}>
+				{slides.map((slide) => (
+					<SwiperSlide key={slide.id}>
+						<Slide imageUrl={slide.imageUrl}></Slide>
+					</SwiperSlide>
+				))}
+			</StyledSwiper>
 			<SwiperOverly>
 				<SwiperText>
 					<h2>Buraq proudly offers a wide array of logistics solutions</h2>
-					<p>Buraq Global Logistics is a privately owned, progressive company specializing in handling flatbed freight. Our logistics team will match your freight needs to one of our carriers to get your products delivered safely and on time.</p>
+					<p>
+						Buraq Global Logistics is a privately owned, progressive company specializing in handling
+						flatbed freight. Our logistics team will match your freight needs to one of our carriers to get
+						your products delivered safely and on time.
+					</p>
 					<ButtonContainer>
-						<PrimaryButton to='/contact'>Contact Us</PrimaryButton>
-						<SecondaryButton to='services'>Trucking Services</SecondaryButton>
+						<PrimaryButton to="/contact">Contact Us</PrimaryButton>
+						<SecondaryButton to="services">Trucking Services</SecondaryButton>
 					</ButtonContainer>
 				</SwiperText>
 			</SwiperOverly>
-	</SwiperContainer>
+		</SwiperContainer>
 	);
 };
-
 
 const SwiperContainer = styled.div`
 	width: 100%;
@@ -149,35 +151,34 @@ const ButtonContainer = styled.div`
 	gap: 20px;
 `;
 const PrimaryButton = styled(Link)`
-  background: #977d44;
-  padding: 12px 28px;
-  border-radius: 8px;
-  color: #000;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+	background: #977d44;
+	padding: 12px 28px;
+	border-radius: 8px;
+	color: #000;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
-  &:hover {
-    background: #fff;
-  }
+	&:hover {
+		background: #fff;
+	}
 `;
 
 const SecondaryButton = styled(Link)`
-  padding: 12px 28px;
-  border-radius: 8px;
-  color: #977d44;
-  font-size: 16px;
-  font-weight: 600;
-  border: 1px solid #977d44;
-  background: none;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+	padding: 12px 28px;
+	border-radius: 8px;
+	color: #977d44;
+	font-size: 16px;
+	font-weight: 600;
+	border: 1px solid #977d44;
+	background: none;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
-  &:hover {
-    background: #fff;
-  }
+	&:hover {
+		background: #fff;
+	}
 `;
-
 
 export default AutoSwiper;

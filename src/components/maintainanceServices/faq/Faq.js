@@ -54,7 +54,7 @@ const QuestionButton = styled.button`
   border: 1px solid rgba(0, 0, 0, .02);
 
   &:hover {
-    background: #229B7D;
+    background: #977d44;
     color: #fff;
   }
 `;
@@ -66,7 +66,7 @@ const ButtonLeft = styled.div`
 `;
 
 const Answer = styled.p`
-    border: 1px solid #eee;
+    border: 1px solid #977d44;
     padding: 15px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
