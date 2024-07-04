@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import driveWithUsFormImage from '../../assets/images/driveWithUsFormImage.png'
+import { toast } from 'react-toastify';
 import { CombinedFields, DriveWithUsContainer, DriveWithUsContent, DriveWithUsFormContainer, FormButton, FormError, FormField, Message } from './DriveWithUsStyles';
 
 const DriveWitUsForm = () => {
+  const [disabledButton, setDisabledButton] = useState(false);
   const formik = useFormik({
     initialValues: {
       firstName: '',
@@ -14,17 +16,39 @@ const DriveWitUsForm = () => {
       message: '',
     },
     validationSchema: Yup.object({
-      firstName: Yup.string().required('Required'),
-      lastName: Yup.string().required('Required'),
-      email: Yup.string().email('Invalid email address').required('Required'),
-      phone: Yup.string().matches(/^[0-9]+$/, "Limit Exceeded").required('Required'),
-      message: Yup.string().required('Required'),
+      firstName: Yup.string().required('First Name is Required'),
+      lastName: Yup.string().required('Last Name is Required'),
+      email: Yup.string().email('Invalid email address').required('Email is Required'),
+      phone: Yup.string().matches(/^[0-9]+$/, 'Invalid phone number').required('Phone is Required'),
+      message: Yup.string().required('Message is Required'),
     }),
-    onSubmit: values => {
+    onSubmit: async values => {
       console.log(values);
       if (!values.honey) {
-        // Process form submission
-        console.log(values);
+        setDisabledButton(true);
+      try {
+        const response = await fetch('https://formspree.io/f/xgvwelgo', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(values),
+        });
+        
+        
+        if (response.ok) {
+          setDisabledButton(false);
+          toast.success(<div><h3>Thank you for contacting us.</h3><br />Our team will get back to you very soon!</div>, {
+          className: "custom-toast",
+        });
+       } else {
+          console.error('Form submission error');
+          // Handle submission error
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        // Handle submission error
+      }
       } else {
         console.log('Spam detected');
       }
@@ -38,7 +62,7 @@ const DriveWitUsForm = () => {
         <DriveWithUsFormContainer onSubmit={formik.handleSubmit}>
             <CombinedFields>
               <FormField>
-                <label htmlFor="firstName">First Name</label>
+                <label htmlFor="firstName">First Name *</label>
                 <input
                   id="firstName"
                   name="firstName"
@@ -52,7 +76,7 @@ const DriveWitUsForm = () => {
                 ) : null}
               </FormField>
               <FormField>
-                <label htmlFor="lastName">Last Name</label>
+                <label htmlFor="lastName">Last Name *</label>
                 <input
                   id="lastName"
                   name="lastName"
@@ -68,7 +92,7 @@ const DriveWitUsForm = () => {
             </CombinedFields>
             <CombinedFields>
               <FormField>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email *</label>
                 <input
                   id="email"
                   name="email"
@@ -82,7 +106,7 @@ const DriveWitUsForm = () => {
                 ) : null}
               </FormField>
               <FormField>
-                <label htmlFor="phone">Phone</label>
+                <label htmlFor="phone">Phone *</label>
                 <input
                   id="phone"
                   name="phone"
@@ -97,7 +121,7 @@ const DriveWitUsForm = () => {
               </FormField>
             </CombinedFields>
             <FormField>
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">Message *</label>
               <Message
                 id="message"
                 name="message"
@@ -122,7 +146,7 @@ const DriveWitUsForm = () => {
                 value={formik.values.honey}
               />
             </div>
-            <FormButton type="submit">Send Message</FormButton>
+            <FormButton type="submit" onClick={formik.handleSubmit} disabled={disabledButton}>Send Message</FormButton>
         </DriveWithUsFormContainer>
       </DriveWithUsContent>
     </DriveWithUsContainer>

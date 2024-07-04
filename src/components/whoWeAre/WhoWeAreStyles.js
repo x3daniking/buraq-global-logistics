@@ -52,6 +52,6 @@ opacity: 1;
     transform-style: preserve-3d;
     border-radius: 30px;
     display: inline-block;
-    box-shadow: 3px 3px 9px rgba(0, 0, 0, .65);
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, .65); 
 }
 `;

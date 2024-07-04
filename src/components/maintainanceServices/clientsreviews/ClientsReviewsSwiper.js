@@ -12,7 +12,8 @@ import { MdOutlineStarPurple500 } from "react-icons/md";
 
 const SliderContainer = styled.div`
   width: 100%;
-  max-width: 1240px;
+  max-width: 1250px;
+  padding: 10px;
   
 
   .swiper-wrapper{
@@ -33,11 +34,15 @@ const SliderContainer = styled.div`
 `;
 
 const ReviewCard = styled.div`
-  border: 1px solid #000;
-	border-radius: 20px;
 	padding: 40px 20px;
   display: flex;
   gap: 30px; 
+  margin: 0 5px;
+opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    border-radius: 30px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, .65);
 `;
 
 const ClientInformation = styled.div`
@@ -81,7 +86,7 @@ const ClientReview = styled.div`
     line-height: 24px;
     letter-spacing: 0.4px;
     max-width: 390px;
-    height: 130px;
+    height: 200px;
   }
 
   h5{

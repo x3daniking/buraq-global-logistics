@@ -1,5 +1,7 @@
 // src/App.js
 import React from 'react';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GlobalStyle from './GlobalStyles';
 import Home from './pages/home/Home';
@@ -37,6 +39,17 @@ function App() {
           </Routes>
           <Footer />
       </Router>
+      <ToastContainer
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
     </>
   );
 }

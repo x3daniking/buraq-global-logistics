@@ -281,6 +281,11 @@ export const FormButton = styled.button`
 		&:hover {
 			background: #000;
 		}
+		
+&:disabled{
+    cursor: not-allowed;
+    background: #000;
+  }
 `;
 
 export const FormError = styled.p`

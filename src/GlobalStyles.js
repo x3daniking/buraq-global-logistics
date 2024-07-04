@@ -13,6 +13,15 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     background: #EBE7E3;
     font-family: "Plus Jakarta Sans", sans-serif;
+    
+    .custom-toast {
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  width: 400px;
+  right: 100px;
+}
   }
   img{
   display: inline-block;

@@ -25,6 +25,10 @@ export const FeaturedWorkContainer = styled.div`
  }
  .image-gallery-slide .image-gallery-image {
     width: 100%;
+    height: 500px;
     object-fit: cover;
+}
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+    height: 60px;
 }
 `;
