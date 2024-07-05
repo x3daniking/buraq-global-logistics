@@ -28,8 +28,8 @@ const Navbar = () => {
 				<MenuIcon onClick={toggleMenu}>
 					<FaBars size={24} />
 				</MenuIcon>
-				<Menu isOpen={menuOpen}>
-					<MenuItem to="/">Home</MenuItem>
+				<Menu isOpen={!menuOpen}>
+					<MenuItem onClick={toggleMenu} to="/">Home</MenuItem>
 					<MenuItem  as="div"
 						onMouseEnter={handleDropdownToggle}
 						onMouseLeave={handleDropdownToggle}
@@ -37,15 +37,15 @@ const Navbar = () => {
 						<div>Services </div>
 						{isDropdownOpen && (
 							<DropdownMenu>
-								<DropdownItem to="/services">Trucking Services</DropdownItem>
-								<DropdownItem to="/maintainance-services">Maintenance & Body Services</DropdownItem>
+								<DropdownItem onClick={toggleMenu} to="/services">Trucking Services</DropdownItem>
+								<DropdownItem onClick={toggleMenu} to="/maintainance-services">Maintenance & Body Services</DropdownItem>
 							</DropdownMenu>
 						)}
 					</MenuItem>
-					<MenuItem to="/about-us">About us</MenuItem>
-					<MenuItem to="/contact">Contact us</MenuItem>
-					<MenuItem to="/blogs">Blogs</MenuItem>
-					<MenuButton to="/drive-with-us">Drive With Us</MenuButton>
+					<MenuItem onClick={toggleMenu} to="/about-us">About us</MenuItem>
+					<MenuItem onClick={toggleMenu} to="/contact">Contact us</MenuItem>
+					<MenuItem onClick={toggleMenu} to="/blogs">Blogs</MenuItem>
+					<MenuButton onClick={toggleMenu} to="/drive-with-us">Drive With Us</MenuButton>
 				</Menu>
 			</Nav>
 		</Header>

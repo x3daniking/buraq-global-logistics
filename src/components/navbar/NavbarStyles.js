@@ -72,7 +72,6 @@ export const MenuItem = styled(NavLink)`
 	padding: 10px 20px;
 
 	&.active {
-    background: #fff;
 	border-radius: 8px;
 }
 &:hover {

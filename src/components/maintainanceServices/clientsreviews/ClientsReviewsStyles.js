@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ClientsReviewsContainer = styled.div`
- padding: 70px 20px;
+ padding: 100px 20px;
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -16,4 +16,16 @@ h2{
     font-weight: 700;
     text-align: center;
 }
+
+ 
+@media (max-width: 768px) {
+padding: 50px 10px;
+gap: 50px;
+
+h2{
+    font-size: 32px;
+    padding: 0 10px;
+}
+}
+
 `;

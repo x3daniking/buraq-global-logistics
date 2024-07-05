@@ -60,6 +60,7 @@ const DriveWitUsForm = () => {
       <DriveWithUsContent>
         <img src={driveWithUsFormImage} alt='driveWithUsFormImage' />
         <DriveWithUsFormContainer onSubmit={formik.handleSubmit}>
+          <h2>Contact Us</h2>
             <CombinedFields>
               <FormField>
                 <label htmlFor="firstName">First Name *</label>

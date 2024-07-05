@@ -9,6 +9,10 @@ export const FooterSection = styled.div`
 	width: 100%;
 	padding: 100px 20px;
 	background: #fff;
+	
+@media (max-width: 768px) {
+  padding: 50px 20px;
+}
 `;
 
 export const FooterContainer = styled.div`

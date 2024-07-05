@@ -8,11 +8,11 @@ const BlogThree = () => {
 		<BlogContainer>
 			<BlogContent>
 				<h2>Top Tips for Efficient Trucking Operations</h2>
-				<h4>
+				<p>
 					Efficient trucking operations are essential for maximizing productivity, minimizing costs, and
 					ensuring timely deliveries. Whether you're a seasoned trucker or new to the industry, implementing
 					these tips can help streamline your operations and enhance overall efficiency.
-				</h4>
+				</p>
 				<img
 					src={blogThree}
 					alt="blog"

@@ -8,12 +8,12 @@ const BlogOne = () => {
 		<BlogContainer>
 			<BlogContent>
 				<h2>Effective Solutions for Supply Chain Management</h2>
-				<h4>
+				<p>
 					Dive into the world of supply chain management and explore effective solutions for overcoming common
 					logistics challenges. From optimizing inventory management to enhancing last-mile delivery, discover
 					strategies to streamline your supply chain operations and meet the ever-evolving demands of the
 					industry.
-				</h4>
+				</p>
 				<img
 					src={blogOne}
 					alt="blog"

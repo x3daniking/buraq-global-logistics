@@ -8,13 +8,13 @@ const BlogTwo = () => {
 		<BlogContainer>
 			<BlogContent>
 				<h2>Essential Guidelines for Trucking and Towing Professionals</h2>
-				<h4>
+				<p>
 					Trucking and towing professionals play a vital role in keeping goods moving efficiently across the
 					country. Whether you're a seasoned driver or new to the industry, adhering to essential guidelines
 					ensures safety, efficiency, and professionalism in your operations. At Buraq Global Logistics, we
 					emphasize these guidelines to uphold industry standards and deliver exceptional service to our
 					clients.
-				</h4>
+				</p>
 				<img
 					src={blogTwo}
 					alt="blog"

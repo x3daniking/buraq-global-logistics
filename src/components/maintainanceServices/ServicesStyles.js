@@ -59,6 +59,38 @@ export const HeroText = styled.div`
 		line-height: 35px;
 		max-width: 700px;
 	}
+		
+@media (max-width: 990px) {
+	h2 {
+		font-size: 44px;
+		font-weight: 700;
+		line-height: 60px;
+		max-width: 450px;
+	}
+	p {
+		font-size: 16px;
+		line-height: 32px;
+		max-width: 650px;
+	}
+}
+
+@media (max-width: 768px) {
+	justify-content: center;
+	align-items: center;
+	h2 {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 50px;
+		max-width: 450px;
+		text-align: center;
+	}
+	p {
+		font-size: 14px;
+		line-height: 26px;
+		max-width: 650px;
+		text-align: center;
+	}
+}
 `;
 
 export const ButtonContainer = styled.div`

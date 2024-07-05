@@ -10,6 +10,10 @@ const FAQSectionContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+			
+@media (max-width: 768px) {
+	padding: 0 20px 30px 20px;
+}
 `;
 
 const FAQSection = styled.div`
@@ -22,12 +26,22 @@ const FAQTitle = styled.h2`
 	font-size: 42px;
 	font-weight: 700;
 	line-height: 60px;
+	
+@media (max-width: 768px) {
+	font-size: 32px;
+	line-height: 50px;
+}
 `;
 
 const FAQQuetions = styled.li`
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
+		
+@media (max-width: 990px) {
+	grid-template-columns: 1fr;
+	max-width: 700px;
+}
 `;
 
 const FAQItem = styled.li`
@@ -72,6 +86,10 @@ const Answer = styled.p`
 	box-sizing: border-box;
 	font-size: 1rem;
 	line-height: 1.7;
+		
+@media (max-width: 768px) {
+	font-size: 14px;
+}
 `;
 
 const PlusMinusIcon = styled.span`

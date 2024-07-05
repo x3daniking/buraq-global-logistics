@@ -9,6 +9,16 @@ export const WhoWeAreContainer = styled.div`
   gap: 50px;
   max-width: 1160px;
   align-self: center;
+  
+@media (max-width: 990px) {
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+ 
+@media (max-width: 768px) {
+  padding: 50px 20px;
+}
 `;
 
 export const WhoWeAreLeft = styled.div`
@@ -24,7 +34,7 @@ export const WhoWeAreLeft = styled.div`
   }
 
   p{
-    color: #111111;
+    color: #000;
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
@@ -41,6 +51,36 @@ export const WhoWeAreLeft = styled.div`
     padding: 10px 20px;
     margin-top: 20px;
   }
+  
+   
+@media (max-width: 990px) {
+  justify-content: center;
+  align-items: center;
+  
+  h2{
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  justify-content: center;
+  align-items: center;
+  
+  h2{
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p{
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
 `;
 
 
