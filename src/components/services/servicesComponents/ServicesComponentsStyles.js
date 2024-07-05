@@ -7,6 +7,10 @@ export const ServicesComponentContainer = styled.div`
   align-items: center;
   width: 100%;
   background: ${({ background }) => background || '#fff'};
+ 
+@media (max-width: 768px) {
+  padding: 50px 20px;
+}
 `;
 
 export const ServicesComponentContent = styled.div`
@@ -15,7 +19,13 @@ export const ServicesComponentContent = styled.div`
   align-items: center;
   width: 100%;
   gap: 50px;
-  max-width: 1120px;
+  max-width: 1120px;  
+   
+@media (max-width: 990px) {
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
 `;
 
 export const ServicesComponentLeft = styled.div`
@@ -48,6 +58,35 @@ export const ServicesComponentLeft = styled.div`
     padding: 10px 20px;
     margin-top: 20px;
   }
+    
+@media (max-width: 990px) {
+  justify-content: center;
+  align-items: center;
+  
+  h2{
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  justify-content: center;
+  align-items: center;
+  
+  h2{
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p{
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
 `;
 
 
@@ -62,5 +101,15 @@ img{
     box-shadow: 3px 3px 9px rgba(0, 0, 0, .65);
     width: 500px;
     height: 400px;
+}
+
+@media (max-width: 768px) {
+  max-width: 300px;
+  img{
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    max-height: 300px;
+  }
 }
 `;

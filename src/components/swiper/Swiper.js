@@ -128,7 +128,7 @@ const SwiperText = styled.div`
 	gap: 20px;
 	width: 100%;
 	max-width: 1100px;
-	padding-top: 100px;
+	padding: 100px 20px 20px 20px;
 
 	h2 {
 		color: #ffffff;
@@ -143,12 +143,50 @@ const SwiperText = styled.div`
 		line-height: 35px;
 		max-width: 700px;
 	}
+	
+@media (max-width: 990px) {
+	h2 {
+		font-size: 44px;
+		font-weight: 700;
+		line-height: 60px;
+		max-width: 450px;
+	}
+	p {
+		font-size: 16px;
+		line-height: 32px;
+		max-width: 650px;
+	}
+}
+
+@media (max-width: 768px) {
+	justify-content: center;
+	align-items: center;
+	h2 {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 50px;
+		max-width: 450px;
+		text-align: center;
+	}
+	p {
+		font-size: 14px;
+		line-height: 26px;
+		max-width: 650px;
+		text-align: center;
+	}
+}
 `;
 
 const ButtonContainer = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 20px;
+
+	
+	@media (max-width: 768px) {
+		gap: 10px;
+		justify-content: center;
+	}
 `;
 const PrimaryButton = styled(Link)`
 	background: #977d44;
@@ -159,9 +197,16 @@ const PrimaryButton = styled(Link)`
 	font-weight: 600;
 	text-decoration: none;
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+	border: 1px solid #977d44;
 
 	&:hover {
 		background: #fff;
+		border: 1px solid #fff;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+		padding: 8px 15px;
 	}
 `;
 
@@ -178,6 +223,11 @@ const SecondaryButton = styled(Link)`
 
 	&:hover {
 		background: #fff;
+	}
+	
+	@media (max-width: 768px) {
+		font-size: 14px;
+		padding: 8px 15px;
 	}
 `;
 

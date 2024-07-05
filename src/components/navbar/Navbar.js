@@ -1,13 +1,19 @@
 // src/components/Navbar.js
 import React, { useState } from "react";
-import { Header, Logo, Menu, MenuButton, MenuItem, Nav, DropdownMenu, DropdownItem } from "./NavbarStyles";
+import { Header, Logo, Menu, MenuButton, MenuItem, Nav, DropdownMenu, DropdownItem, MenuIcon } from "./NavbarStyles";
 import logo from "../../assets/images/logo.png";
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
+	const [menuOpen, setMenuOpen] = useState(false);
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
 	const handleDropdownToggle = () => {
 		setIsDropdownOpen(!isDropdownOpen);
+	};
+  
+	const toggleMenu = () => {
+	  setMenuOpen(!menuOpen);
 	};
 
 	return (
@@ -19,24 +25,27 @@ const Navbar = () => {
 						alt="logo"
 					/>
 				</Logo>
-				<Menu>
-					<MenuItem to="/">Home</MenuItem>
-					<div
+				<MenuIcon onClick={toggleMenu}>
+					<FaBars size={24} />
+				</MenuIcon>
+				<Menu isOpen={!menuOpen}>
+					<MenuItem onClick={toggleMenu} to="/">Home</MenuItem>
+					<MenuItem  as="div"
 						onMouseEnter={handleDropdownToggle}
 						onMouseLeave={handleDropdownToggle}
 					>
-						<MenuItem as="div">Services </MenuItem>
+						<div>Services </div>
 						{isDropdownOpen && (
 							<DropdownMenu>
-								<DropdownItem to="/services">Trucking Services</DropdownItem>
-								<DropdownItem to="/maintainance-services">Maintenance & Body Services</DropdownItem>
+								<DropdownItem onClick={toggleMenu} to="/services">Trucking Services</DropdownItem>
+								<DropdownItem onClick={toggleMenu} to="/maintainance-services">Maintenance & Body Services</DropdownItem>
 							</DropdownMenu>
 						)}
-					</div>
-					<MenuItem to="/about-us">About us</MenuItem>
-					<MenuItem to="/contact">Contact us</MenuItem>
-					<MenuItem to="/blogs">Blogs</MenuItem>
-					<MenuButton to="/drive-with-us">Drive With Us</MenuButton>
+					</MenuItem>
+					<MenuItem onClick={toggleMenu} to="/about-us">About us</MenuItem>
+					<MenuItem onClick={toggleMenu} to="/contact">Contact us</MenuItem>
+					<MenuItem onClick={toggleMenu} to="/blogs">Blogs</MenuItem>
+					<MenuButton onClick={toggleMenu} to="/drive-with-us">Drive With Us</MenuButton>
 				</Menu>
 			</Nav>
 		</Header>

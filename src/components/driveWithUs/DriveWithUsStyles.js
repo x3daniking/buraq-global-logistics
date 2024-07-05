@@ -18,6 +18,9 @@ export const JobServicesContainer = styled.div`
 		max-width: 1120px;
 		text-align: center;
 	}
+	h4{
+		text-align: center;
+	}
 
 	p {
 		color: #000000;
@@ -27,6 +30,18 @@ export const JobServicesContainer = styled.div`
 		max-width: 1120px;
 		text-align: center;
 	}
+	
+@media (max-width: 768px) {
+	padding: 50px 20px;
+
+	h2 {
+		font-size: 32px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
 `;
 
 export const JobServicesCards = styled.div`
@@ -36,6 +51,14 @@ export const JobServicesCards = styled.div`
 	row-gap: 30px;
 	margin: 30px 0;
 	max-width: 1120px;
+			
+@media (max-width: 1200px) {
+	grid-template-columns: 1fr 1fr;
+}
+		
+@media (max-width: 768px) {
+	grid-template-columns: 1fr;
+}
 `;
 
 export const JobServicesCard = styled.div`
@@ -80,6 +103,22 @@ export const JobServicesCard = styled.div`
 		border-bottom: 5px solid #000;
 		box-shadow: rgba(0, 0, 0, 0.65) 3px 3px 9px 0px;
 	}
+				
+@media (max-width: 768px) {
+
+h3 {
+	font-size: 22px;
+	line-height: 34px;
+}
+
+p {
+	font-size: 14px;
+}
+
+li {
+	font-size: 14px;
+}
+}
 `;
 
 export const DriverBenefitsContainer = styled.div`
@@ -108,6 +147,18 @@ export const DriverBenefitsContainer = styled.div`
 		max-width: 550px;
 		text-align: center;
 	}
+		
+@media (max-width: 768px) {
+	padding: 50px 20px;
+
+	h2 {
+		font-size: 32px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
 `;
 
 export const DriverBenefitsCards = styled.div`
@@ -117,6 +168,10 @@ export const DriverBenefitsCards = styled.div`
 	row-gap: 50px;
 	margin-top: 50px;
 	max-width: 1120px;
+			
+@media (max-width: 768px) {
+	grid-template-columns: 1fr;
+}
 `;
 
 export const DriverBenefitsCard = styled.div`
@@ -189,6 +244,10 @@ export const DriverBenefitsImageContainer = styled.div`
   &:hover img {
     animation: ${flipAnimation} 1s infinite linear;
   }
+  @media (max-width: 768px) {
+	top: -45px;
+	right: -20px;
+}
 `;
 
 
@@ -198,6 +257,9 @@ export const DriveWithUsContainer = styled.div`
 	align-items: center;
 	padding: 100px 20px;
 	width: 100%;
+	@media (max-width: 768px) {
+	padding: 50px 20px;
+}
 `;
 
 export const DriveWithUsContent = styled.div`
@@ -211,6 +273,15 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 gap: 50px;
+		
+@media (max-width: 1200px) {
+	img{
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	padding: 30px 20px;
+}
 `;
 
 
@@ -218,7 +289,10 @@ export const DriveWithUsFormContainer = styled.form`
 display: flex;
 flex-direction: column;
 gap: 25px;
-width: 50%;
+width: 50%;		
+@media (max-width: 1200px) {
+	width: 100%;
+}
 `;
 
 export const CombinedFields = styled.div`
@@ -226,6 +300,9 @@ display: flex;
 align-items: center;
 gap: 20px;
 width: 100%;
+@media (max-width: 768px) {
+	flex-direction: column;
+}
 `;
 
 export const FormField = styled.div`
@@ -286,6 +363,9 @@ export const FormButton = styled.button`
     cursor: not-allowed;
     background: #000;
   }
+  @media (max-width: 768px) {
+	font-size: 16px;
+}
 `;
 
 export const FormError = styled.p`

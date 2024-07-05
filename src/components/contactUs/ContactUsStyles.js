@@ -4,9 +4,12 @@ export const ContactUsContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 	padding: 100px 20px;
 	width: 100%;
+    
+@media (max-width: 768px) {
+    padding: 50px 20px;
+}
 `;
 
 export const ContactUsContent = styled.div`
@@ -19,6 +22,16 @@ export const ContactUsContent = styled.div`
 display: flex;
 justify-content: space-between;
 gap: 50px;
+		
+@media (max-width: 990px) {
+	flex-direction: column;
+}
+		
+@media (max-width: 768px) {
+	padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+}
 `;
 
 export const ContactUsContentLeft = styled.div`
@@ -51,6 +64,29 @@ h3{
     font-weight: 500;
     margin: 15px 0 0 0;
 }
+		
+@media (max-width: 768px) {
+	
+h1{
+    font-size: 32px;
+    text-align: center;
+}
+
+h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+p{
+    font-size: 14px;
+    text-align: center;
+}
+
+h3{
+    font-size: 24px;
+    text-align: center;
+}
+}
 `;
 
 export const ContactUsIcons = styled.div`
@@ -63,18 +99,35 @@ p{
     font-size: 17px;
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    justify-content: center;
+    p{
+        font-size: 14px;
+    }
+    img{
+        width: 20px;
+        height: 25px;
+    }
+}
 `;
 
 export const ContactUsFormContainer = styled.form`
 display: flex;
 flex-direction: column;
 gap: 25px;
+width: 100%;
 `;
 
 export const CombinedFields = styled.div`
 display: flex;
 align-items: center;
 gap: 20px;
+width: 100%;
+		
+@media (max-width: 768px) {
+	flex-direction: column;
+}
 `;
 
 export const FormField = styled.div`
@@ -82,6 +135,7 @@ display: flex;
 flex-direction: column;
 gap: 5px;
 position: relative;
+width: 100%;
 
 label{
     font-size: 16px;
@@ -134,6 +188,10 @@ export const FormButton = styled.button`
     cursor: not-allowed;
     background: #000;
   }
+  		
+@media (max-width: 768px) {
+	font-size: 16px;
+}
 `;
 
 export const FormError = styled.p`

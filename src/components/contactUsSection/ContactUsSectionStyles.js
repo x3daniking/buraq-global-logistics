@@ -8,6 +8,10 @@ export const ContactUsSectionContainer = styled.div`
 	background: #fff;
 	padding: 100px 20px;
 	width: 100%;
+
+@media (max-width: 768px) {
+	padding: 50px 20px;
+}
 `;
 
 export const ContactUsSectionContent = styled.div`
@@ -44,12 +48,38 @@ padding: 30px; */
 		line-height: 35px;
 		font-weight: 500;
 	}
+		
+	@media (max-width: 768px) {
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	
+	h1 {
+		font-size: 32px;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 26px;
+		text-align: center;
+	}
+}
 `;
 
 export const ContactUsButtonContainer = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 30px;
+	
+@media (max-width: 768px) {
+	gap: 10px;
+}
 `;
 
 export const ContactUsButton = styled(Link)`
@@ -69,5 +99,11 @@ align-items: center;
 
 &:hover {
 	background: #000;
+}
+
+@media (max-width: 768px) {
+	font-size: 13px;
+	width: 130px;
+	height: 40px;
 }
 `;

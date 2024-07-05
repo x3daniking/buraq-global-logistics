@@ -19,6 +19,10 @@ export const OurBlogsContainer = styled.div`
 		max-width: 1120px;
 		text-align: center;
 	}
+	
+	@media screen and (max-width: 768px){
+		padding: 50px 20px;
+	}
 `;
 
 export const OurBlogsCards = styled.div`
@@ -26,16 +30,22 @@ export const OurBlogsCards = styled.div`
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 30px;
 	row-gap: 30px;
-	margin: 30px 0;
 	max-width: 1400px;
+	
+	@media screen and (max-width: 990px){
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	@media screen and (max-width: 768px){
+		grid-template-columns: 1fr;
+	}
 `;
 
 export const OurBlogsCard = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	gap: 20px;
+	flex-direction: column;	
 	text-align: center;
 	background-color: #fff;
 	border: 5px solid transparent;
@@ -50,6 +60,8 @@ export const OurBlogsCard = styled.div`
 		font-weight: 700;
 		line-height: 31.6px;
 		text-align: left;
+		height: 80px;
+		margin-top: 20px;
 	}
 
 	p {
@@ -58,19 +70,22 @@ export const OurBlogsCard = styled.div`
 		line-height: 24px;
 		font-weight: 500;
 		text-align: left;
-		height: 70px;
+		height: 80px;
 	}
-
 	img {
-		height: 220px;
-		align-self: flex-start;
-	opacity: 1;
+    aspect-ratio: 16 / 9; /* Set the desired aspect ratio */
+    height: auto; /* Automatically calculate the height based on the aspect ratio */
+    width: 100%; /* Full width of the container */
+    align-self: flex-start;
+    opacity: 1;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     border-radius: 8px;
     display: inline-block;
-    box-shadow: 3px 3px 9px rgba(0, 0, 0, .65);
-	}
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.65);
+    filter: hue-rotate(280deg);
+}
+
 
 	&:hover {
 		transition: all 0.3s ease-in-out;
@@ -78,6 +93,19 @@ export const OurBlogsCard = styled.div`
 		border-bottom: 5px solid #000;
 		box-shadow: rgba(0, 0, 0, 0.65) 3px 3px 9px 0px;
 	}
+
+	@media screen and (max-width: 1200px){
+		h3, p{
+			height: 100px;
+		}
+	}
+	@media screen and (max-width: 768px){
+		gap: 10px;
+		h3, p{
+			height: 100%;
+		}
+	}
+	
 `;
 
 export const BlogLink = styled(Link)`
@@ -94,4 +122,8 @@ background: none;
 		&:hover {
 			background: #977d44;
 		}
+		
+	@media screen and (max-width: 768px){
+		margin-top: 20px;
+	}
 `;

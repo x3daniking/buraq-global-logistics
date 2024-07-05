@@ -7,6 +7,10 @@ export const BlogContainer = styled.div`
 	background: #fff;
 	padding: 150px 20px 100px 20px;
 	width: 100%;
+
+	@media screen and (max-width: 768px){
+		padding: 140px 20px 50px 20px;
+	}
 `;
 
 export const BlogContent = styled.div`
@@ -40,6 +44,23 @@ export const BlogContent = styled.div`
 		transform-style: preserve-3d;
 		width: max-content;
 		display: inline-block;
+		filter: hue-rotate(280deg);
+		max-height: 600px;
+		width: 100%;
+		align-self: center;
+		border-radius: 8px;
+	}
+	
+	@media screen and (max-width: 768px){
+		padding: 30px 20px;
+	h2 {
+		font-size: 30px;
+		line-height: 50px;
+	}
+
+	p {
+		font-size: 14px;
+	}
 	}
 `;
 
@@ -96,6 +117,10 @@ export const FormButton = styled.button`
 	&:hover {
 		background: #000;
 	}
+	
+	@media screen and (max-width: 768px){
+		font-size: 16px;
+		}
 `;
 
 export const FormError = styled.p`

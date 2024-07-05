@@ -8,6 +8,10 @@ export const AboutUsSectionTopContainer = styled.div`
 	background: #fff;
 	padding: 100px 20px;
 	width: 100%;
+				
+@media (max-width: 768px) {
+padding: 50px 20px;
+}
 `;
 
 export const AboutUsSectionTopContent = styled.div`
@@ -47,6 +51,10 @@ export const AboutUsSectionBottomContainer = styled.div`
 	align-items: center;
 	width: 100%;
 	background: #fff;
+					
+@media (max-width: 768px) {
+padding: 50px 20px;
+}
 `;
 
 export const AboutUsSectionBottomContent = styled.div`
@@ -92,6 +100,19 @@ export const AboutUsSectionBottomLeft = styled.div`
 			background: #000;
 		}
 	}
+			
+@media (max-width: 768px) {
+
+	h2 {
+		font-size: 32px;
+		text-align: center;
+	}
+
+	p {
+		font-size: 14px;
+		text-align: center;
+	}
+}
 `;
 
 export const GetInTouchButton = styled(Link)`
@@ -111,7 +132,12 @@ export const GetInTouchButton = styled(Link)`
 
 	&:hover {
 		background: #000;
-	}
+	}			
+@media (max-width: 768px) {
+		font-size: 14px;
+		height: 40px;
+		width: 150px;
+}
 `;
 
 export const AboutUsSectionBottomRight = styled.div`

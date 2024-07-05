@@ -27,6 +27,22 @@ export const OurServicesContainer = styled.div`
 		max-width: 1120px;
 		text-align: justify;
 	}
+	
+@media (max-width: 768px) {
+	justify-content: center;
+	align-items: center;
+	padding: 50px 20px;
+
+h2 {
+	font-size: 32px;
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	text-align: center;
+}
+}
 `;
 
 export const OurServicesCards = styled.div`
@@ -34,8 +50,16 @@ export const OurServicesCards = styled.div`
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 30px;
 	row-gap: 30px;
-	margin: 30px 0;
+	margin: 30px 0 0 0;
 	max-width: 1120px;
+	
+@media (max-width: 990px) {
+	grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+	grid-template-columns: 1fr;
+}
 `;
 
 export const OurServicesCard = styled.div`
@@ -96,6 +120,20 @@ export const OurServicesCard = styled.div`
 		border-bottom: 5px solid #000;
 		box-shadow: rgba(0, 0, 0, 0.65) 3px 3px 9px 0px;
 	}
+	
+@media (max-width: 768px) {
+	padding: 30px 20px;
+	h3 {
+		font-size: 24px;
+		line-height: 35px;
+	}
+
+	p {
+		color: #000000;
+		font-size: 14px;
+		height: 150px;
+	}
+}
 `;
 
 export const ServicesCardButton = styled(Link)`

@@ -43,6 +43,12 @@ opacity: 1;
     transform-style: preserve-3d;
     border-radius: 30px;
     box-shadow: 3px 3px 9px rgba(0, 0, 0, .65);
+     
+@media (max-width: 600px) {
+flex-direction: column;
+gap: 20px;
+padding: 30px 20px;
+}
 `;
 
 const ClientInformation = styled.div`
@@ -50,6 +56,7 @@ const ClientInformation = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  width: 130px;
 
   img{
     width: 85px;
@@ -63,6 +70,7 @@ const ClientInformation = styled.div`
     font-weight: 500;
     letter-spacing: 0.4px;
     text-align: center;
+    width: 130px;
     
   }
 `;
@@ -92,6 +100,24 @@ const ClientReview = styled.div`
   h5{
     color: #F2CE1B;
   }
+  
+@media (max-width: 1200px) {
+p{
+  max-width: 900px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+}
+    
+@media (max-width: 600px) {
+gap: 10px;
+h3{
+  margin: 0;
+}
+p{
+  font-size: 14px;
+}
+}
 `;
 
 const RatingStars = styled.div`
@@ -113,15 +139,11 @@ const ClientsReviewsSwiper = () => {
         pagination={{ clickable: true }}
         modules={[Pagination]} 
         breakpoints={{
-          640: {
+          0: {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          1024: {
+          1200: {
             slidesPerView: 2,
             spaceBetween: 30,
           },

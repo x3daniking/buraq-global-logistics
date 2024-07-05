@@ -59,6 +59,38 @@ export const HeroText = styled.div`
 		line-height: 35px;
 		max-width: 700px;
 	}
+		
+@media (max-width: 990px) {
+	h2 {
+		font-size: 44px;
+		font-weight: 700;
+		line-height: 60px;
+		max-width: 450px;
+	}
+	p {
+		font-size: 16px;
+		line-height: 32px;
+		max-width: 650px;
+	}
+}
+
+@media (max-width: 768px) {
+	justify-content: center;
+	align-items: center;
+	h2 {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 50px;
+		max-width: 450px;
+		text-align: center;
+	}
+	p {
+		font-size: 14px;
+		line-height: 26px;
+		max-width: 650px;
+		text-align: center;
+	}
+}
 `;
 
 export const ButtonContainer = styled.div`
@@ -122,4 +154,37 @@ export const ServicesFilterBarMenu = styled.div`
       background: rgba(0, 0, 0, 0.1);
 		}
   }
+  	
+@media (max-width: 990px) {
+	flex-wrap: wrap;
+	justify-content: center;
+	button{
+		font-size: 14px;
+		padding: 10px 15px;
+	}
+} 	
+@media (max-width: 768px) {
+	button{
+		font-size: 12px;
+		padding: 8px 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	justify-content: center;
+	align-items: center;
+	h2 {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 50px;
+		max-width: 450px;
+		text-align: center;
+	}
+	p {
+		font-size: 14px;
+		line-height: 26px;
+		max-width: 650px;
+		text-align: center;
+	}
+}
 `;
