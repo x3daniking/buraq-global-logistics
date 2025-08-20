@@ -5,11 +5,11 @@ export const MaintainanceOurServicesContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	padding: 100px 20px;	
+	padding: 100px 20px;
 
-@media (max-width: 768px) {
-	padding: 50px 20px;
-}
+	@media (max-width: 768px) {
+		padding: 50px 20px;
+	}
 `;
 
 export const OurServicesContainer = styled.div`
@@ -35,33 +35,33 @@ export const OurServicesContainer = styled.div`
 		max-width: 880px;
 		text-align: center;
 	}
-			
-@media (max-width: 768px) {
 
-	h2 {
-		font-size: 32px;
-	}
+	@media (max-width: 768px) {
+		h2 {
+			font-size: 32px;
+		}
 
-	p {
-		font-size: 14px;
+		p {
+			font-size: 14px;
+		}
 	}
-}
 `;
 
 export const OurServicesCards = styled.div`
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-columns: 1fr;
+	justify-items: center;
 	column-gap: 30px;
 	row-gap: 30px;
 	margin-top: 30px;
-		
-@media (max-width: 1200px) {
-	grid-template-columns: 1fr 1fr;
-}
-		
-@media (max-width: 768px) {
-	grid-template-columns: 1fr;
-}
+
+	@media (max-width: 1200px) {
+		grid-template-columns: 1fr;
+	}
+
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+	}
 `;
 
 export const OurServicesCard = styled.div`
@@ -102,16 +102,15 @@ export const OurServicesCard = styled.div`
 		border-bottom: 5px solid #000;
 		box-shadow: rgba(0, 0, 0, 0.65) 3px 3px 9px 0px;
 	}
-			
-@media (max-width: 768px) {
 
-	h3 {
-		font-size: 22px;
-		line-height: 34px;
-	}
+	@media (max-width: 768px) {
+		h3 {
+			font-size: 22px;
+			line-height: 34px;
+		}
 
-	p {
-		font-size: 14px;
+		p {
+			font-size: 14px;
+		}
 	}
-}
 `;

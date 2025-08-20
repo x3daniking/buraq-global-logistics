@@ -17,8 +17,10 @@ const AboutUsSectionBottom = () => {
 						Buraq Global Logistics is a dedicated provider of comprehensive logistics and transportation
 						solutions across the United States. Established four years ago, we have swiftly grown to become
 						a trusted name in the industry, specializing in efficient and reliable freight services. Our
-						commitment to excellence is evident in every aspect of our operations, from meticulous vehicle
-						maintenance to strategic route planning and personalized customer service.
+						commitment to excellence is evident in every aspect of our operations, from{" "}
+						{/* meticulous vehicle
+						maintenance to */}{" "}
+						strategic route planning and personalized customer service.
 					</p>
 					<p>
 						At Buraq Global Logistics, we pride ourselves on our ability to meet diverse logistical needs

@@ -17,13 +17,13 @@ const BlogThree = () => {
 					src={blogThree}
 					alt="blog"
 				/>
-				<h3>1. Maintain Vehicle Maintenance</h3>
+				{/* <h3>1. Maintain Vehicle Maintenance</h3>
 				<p>
 					Regular vehicle maintenance is crucial for reliable performance on the road. Conduct pre-trip
 					inspections to check tire pressure, brakes, lights, fluids, and overall vehicle condition. Address
 					any issues promptly to prevent breakdowns and ensure safety. Scheduled maintenance, including oil
 					changes and engine tune-ups, helps optimize fuel efficiency and extends the lifespan of your truck.
-				</p>
+				</p> */}
 				<h3>2. Optimize Route Planning</h3>
 				<p>
 					Effective route planning is key to minimizing fuel consumption and reducing transit times. Utilize
@@ -59,10 +59,10 @@ const BlogThree = () => {
 				<h3>Partner with Buraq Global Logistics</h3>
 				<p>
 					At Buraq Global Logistics, we prioritize efficiency in our trucking operations to deliver superior
-					service to our clients. Our commitment to vehicle maintenance, optimized route planning, efficient
-					cargo management, driver safety, and technological innovation sets us apart as a trusted logistics
-					partner. Whether you require short-haul or long-haul transportation solutions, rely on Buraq Global
-					Logistics for reliable and efficient service tailored to your needs.
+					service to our clients. Our commitment to {/* vehicle maintenance, */} optimized route planning,
+					efficient cargo management, driver safety, and technological innovation sets us apart as a trusted
+					logistics partner. Whether you require short-haul or long-haul transportation solutions, rely on
+					Buraq Global Logistics for reliable and efficient service tailored to your needs.
 				</p>
 				<h2>Leave a Reply</h2>
 				<p>Your email address will not be published. Required fields are marked *</p>
