@@ -55,6 +55,8 @@ const Footer = () => {
 						</FooterIcon>
 					</FooterIcons>
 					{/* <h3>onestoppetroleum@gmail.com</h3> */}
+					<h3>1763 Eyre Place</h3>
+					<h3>North Bellmore NY 11710</h3>
 					<h2>(631) 565-2990</h2>
 					<h2>(516) 244-2780</h2>
 				</FooterRight>

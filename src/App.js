@@ -16,6 +16,7 @@ import BlogOne from "./components/blogs/BlogOne";
 import BlogTwo from "./components/blogs/BlogTwo";
 import BlogThree from "./components/blogs/BlogThree";
 import DriveWithUsPage from "./pages/driveWithUsPage/DriveWithUsPage";
+import ScrollToTop from "./components/ScrollToTop";
 // import MaintainanceServices from "./components/maintainanceServices/MaintainanceServices";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 		<>
 			<GlobalStyle />
 			<Router>
+				<ScrollToTop />
 				<TitleUpdater />
 				<Navbar />
 				<Routes>

@@ -10,22 +10,22 @@ const ServicesContactUs = () => {
 	return (
 		<ContactUsSectionContainer>
 			<ContactUsSectionContent>
-				<h3>Comprehensive fleet management solutions with our dedicated fleet</h3>
+				<h3>Dedicated USPS Transportation Solutions</h3>
 				<p>
-					For over four years, Buraq Global Logistics has been dedicated to providing customized shipping
-					solutions to our customers within the United States. Our in-house logistics team and experienced
-					drivers ensure efficient operations tailored to meet your specific needs.
+					For over four years, Buraq Global Logistics has been the exclusive transportation partner for the
+					United States Postal Service (USPS). Our specialized logistics team and experienced drivers ensure
+					efficient mail and package delivery operations tailored to meet USPS service standards.
 				</p>
 				<p>
-					Navigating compliance requirements can be complex and time-consuming. At Buraq Global Logistics, our
-					fleets operate seamlessly with the highest quality drivers and dispatchers, ensuring your products
-					reach their destinations on time and in full. We maintain an industry-leading on-time delivery rate,
-					relieving you of any concerns about meeting shipping deadlines.
+					With our commitment to operational excellence and compliance with postal service requirements, Buraq
+					Global Logistics provides seamless transportation services with the highest quality drivers and
+					dispatchers. We maintain an industry-leading on-time delivery rate for all USPS shipments, ensuring
+					mail and packages reach their destinations reliably.
 				</p>
 				<p>
-					At Buraq Global Logistics, we pride ourselves on delivering reliable and trustworthy transportation
-					services that grow with your business needs. Whether you require consistent deliveries or tailored
-					logistics solutions, we are here to support you every step of the way.
+					At Buraq Global Logistics, we pride ourselves on delivering reliable and trustworthy USPS
+					transportation services. As your dedicated postal service partner, we ensure consistent performance
+					and operational excellence in mail delivery logistics across the United States.
 				</p>
 				<ContactUsButtonContainer>
 					<ContactUsButton to="/contact">Contact Us Today</ContactUsButton>

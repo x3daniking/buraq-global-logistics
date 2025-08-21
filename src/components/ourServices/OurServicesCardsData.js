@@ -2,10 +2,18 @@ export const CardsData = [
 	{
 		id: 1,
 		// image: serviceOne,
-		title: "TRUCKING SERVICES",
+		title: "USPS TRANSPORTATION SERVICES",
 		heading:
-			"For four years, Buraq Global Logistics has provided quality service and efficient handling of loads, including refrigerated, flatbed, and specialized freight. With one of the best safety records in the nation, our team is here to help.",
+			"Buraq Global Logistics is proud to serve as an exclusive transportation provider for the United States Postal Service (USPS). We specialize in reliable mail and package delivery services, ensuring efficient transportation solutions that support USPS operations nationwide.",
 	},
+	// Commented out other services - now only providing USPS service
+	// {
+	// 	id: 1,
+	// 	// image: serviceOne,
+	// 	title: "TRUCKING SERVICES",
+	// 	heading:
+	// 		"For four years, Buraq Global Logistics has provided quality service and efficient handling of loads, including refrigerated, flatbed, and specialized freight. With one of the best safety records in the nation, our team is here to help.",
+	// },
 	// {
 	// 	id: 2,
 	// 	// image: serviceTwo,

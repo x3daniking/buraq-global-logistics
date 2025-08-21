@@ -17,37 +17,37 @@ const AutoSwiper = () => {
 		{
 			id: 1,
 			imageUrl: truck1,
-			title: "Buraq proudly offers a wide array of logistics solutions",
+			title: "Buraq proudly provides specialized USPS transportation solutions",
 			heading:
-				"Buraq Global Logistics is a privately owned, progressive company specializing in handling flatbed freight. Our logistics team will match your freight needs to one of our carriers to get your products delivered safely and on time.",
+				"Buraq Global Logistics is a trusted partner of the United States Postal Service, specializing in reliable mail and package delivery services. Our dedicated logistics team ensures efficient USPS operations to get mail and packages delivered safely and on time across America.",
 		},
 		{
 			id: 2,
 			imageUrl: truck2,
-			title: "Buraq proudly offers a wide array of logistics solutions",
+			title: "Buraq proudly provides specialized USPS transportation solutions",
 			heading:
-				"Buraq Global Logistics is a privately owned, progressive company specializing in handling flatbed freight. Our logistics team will match your freight needs to one of our carriers to get your products delivered safely and on time.",
+				"Buraq Global Logistics is a trusted partner of the United States Postal Service, specializing in reliable mail and package delivery services. Our dedicated logistics team ensures efficient USPS operations to get mail and packages delivered safely and on time across America.",
 		},
 		{
 			id: 3,
 			imageUrl: truck3,
-			title: "Buraq proudly offers a wide array of logistics solutions",
+			title: "Buraq proudly provides specialized USPS transportation solutions",
 			heading:
-				"Buraq Global Logistics is a privately owned, progressive company specializing in handling flatbed freight. Our logistics team will match your freight needs to one of our carriers to get your products delivered safely and on time.",
+				"Buraq Global Logistics is a trusted partner of the United States Postal Service, specializing in reliable mail and package delivery services. Our dedicated logistics team ensures efficient USPS operations to get mail and packages delivered safely and on time across America.",
 		},
 		{
 			id: 4,
 			imageUrl: truck4,
-			title: "Buraq proudly offers a wide array of logistics solutions",
+			title: "Buraq proudly provides specialized USPS transportation solutions",
 			heading:
-				"Buraq Global Logistics is a privately owned, progressive company specializing in handling flatbed freight. Our logistics team will match your freight needs to one of our carriers to get your products delivered safely and on time.",
+				"Buraq Global Logistics is a trusted partner of the United States Postal Service, specializing in reliable mail and package delivery services. Our dedicated logistics team ensures efficient USPS operations to get mail and packages delivered safely and on time across America.",
 		},
 		{
 			id: 5,
 			imageUrl: truck5,
-			title: "Buraq proudly offers a wide array of logistics solutions",
+			title: "Buraq proudly provides specialized USPS transportation solutions",
 			heading:
-				"Buraq Global Logistics is a privately owned, progressive company specializing in handling flatbed freight. Our logistics team will match your freight needs to one of our carriers to get your products delivered safely and on time.",
+				"Buraq Global Logistics is a trusted partner of the United States Postal Service, specializing in reliable mail and package delivery services. Our dedicated logistics team ensures efficient USPS operations to get mail and packages delivered safely and on time across America.",
 		},
 	];
 
@@ -71,9 +71,9 @@ const AutoSwiper = () => {
 				<SwiperText>
 					<h2>Buraq proudly offers a wide array of logistics solutions</h2>
 					<p>
-						Buraq Global Logistics is a privately owned, progressive company specializing in handling
-						flatbed freight. Our logistics team will match your freight needs to one of our carriers to get
-						your products delivered safely and on time.
+						Buraq Global Logistics is a privately owned, progressive company specializing in handling USPS
+						freight. Our logistics team will match your freight needs to one of our carriers to get your
+						products delivered safely and on time.
 					</p>
 					<ButtonContainer>
 						<PrimaryButton to="/contact">Contact Us</PrimaryButton>
@@ -143,38 +143,38 @@ const SwiperText = styled.div`
 		line-height: 35px;
 		max-width: 700px;
 	}
-	
-@media (max-width: 990px) {
-	h2 {
-		font-size: 44px;
-		font-weight: 700;
-		line-height: 60px;
-		max-width: 450px;
-	}
-	p {
-		font-size: 16px;
-		line-height: 32px;
-		max-width: 650px;
-	}
-}
 
-@media (max-width: 768px) {
-	justify-content: center;
-	align-items: center;
-	h2 {
-		font-size: 32px;
-		font-weight: 700;
-		line-height: 50px;
-		max-width: 450px;
-		text-align: center;
+	@media (max-width: 990px) {
+		h2 {
+			font-size: 44px;
+			font-weight: 700;
+			line-height: 60px;
+			max-width: 450px;
+		}
+		p {
+			font-size: 16px;
+			line-height: 32px;
+			max-width: 650px;
+		}
 	}
-	p {
-		font-size: 14px;
-		line-height: 26px;
-		max-width: 650px;
-		text-align: center;
+
+	@media (max-width: 768px) {
+		justify-content: center;
+		align-items: center;
+		h2 {
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 50px;
+			max-width: 450px;
+			text-align: center;
+		}
+		p {
+			font-size: 14px;
+			line-height: 26px;
+			max-width: 650px;
+			text-align: center;
+		}
 	}
-}
 `;
 
 const ButtonContainer = styled.div`
@@ -182,7 +182,6 @@ const ButtonContainer = styled.div`
 	align-items: center;
 	gap: 20px;
 
-	
 	@media (max-width: 768px) {
 		gap: 10px;
 		justify-content: center;
@@ -224,7 +223,7 @@ const SecondaryButton = styled(Link)`
 	&:hover {
 		background: #fff;
 	}
-	
+
 	@media (max-width: 768px) {
 		font-size: 14px;
 		padding: 8px 15px;

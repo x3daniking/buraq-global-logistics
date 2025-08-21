@@ -19,7 +19,7 @@ const ServicesHeroSection = () => {
 			</HeroSection>
 			<HeroOverly>
 				<HeroText>
-					<h2>Trucking, Freight & Transportation Solutions</h2>
+					<h2>USPS Transportation Solutions</h2>
 					{/* <p>Buraq Global Logistics is a privately owned, progressive company specializing in handling flatbed freight. Our logistics team will match your freight needs to one of our carriers to get your products delivered safely and on time.</p>
 					<ButtonContainer>
 						<PrimaryButton>Drive With Us</PrimaryButton>

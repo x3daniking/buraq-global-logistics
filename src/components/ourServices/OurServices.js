@@ -7,14 +7,15 @@ const OurServices = () => {
 		<OurServicesContainer>
 			<h2>BURAQ GLOBAL LOGITICS</h2>
 			<p>
-				Buraq Global Logistics is the partner you can trust to move goods by truck to any destination within the
-				United States. We specialize in time-sensitive freight and offer a range of services to meet diverse
-				transportation needs, including flatbed, dry van, and specialized freight.
+				Buraq Global Logistics is the exclusive transportation partner for the United States Postal Service
+				(USPS). We specialize in reliable mail and package delivery services, ensuring efficient operations that
+				support USPS delivery requirements across the United States.
 			</p>
 			<p>
-				Buraq Global Logistics Freight Solutions provides FTL and LTL trucking services across the U.S.,
-				ensuring that your goods are delivered safely and on time to their destination. Whether you need long
-				haul or short haul services, we have the expertise and equipment to handle your freight efficiently.
+				With our experienced team and modern fleet, Buraq Global Logistics provides dedicated USPS
+				transportation services, ensuring that mail and packages are delivered safely and on time to their
+				destinations. Our commitment to operational excellence makes us a trusted partner in connecting
+				communities nationwide.
 			</p>
 			<OurServicesCards>
 				{CardsData.map((cardData) => (

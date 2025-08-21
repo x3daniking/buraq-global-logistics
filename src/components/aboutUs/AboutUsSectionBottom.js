@@ -14,21 +14,19 @@ const AboutUsSectionBottom = () => {
 				<AboutUsSectionBottomLeft>
 					<h2>Who We Are</h2>
 					<p>
-						Buraq Global Logistics is a dedicated provider of comprehensive logistics and transportation
-						solutions across the United States. Established four years ago, we have swiftly grown to become
-						a trusted name in the industry, specializing in efficient and reliable freight services. Our
-						commitment to excellence is evident in every aspect of our operations, from{" "}
-						{/* meticulous vehicle
-						maintenance to */}{" "}
-						strategic route planning and personalized customer service.
+						Buraq Global Logistics is a dedicated provider of specialized transportation solutions serving
+						the United States Postal Service (USPS). Established four years ago, we have swiftly grown to
+						become a trusted partner in postal logistics, specializing in efficient and reliable mail and
+						package delivery services. Our commitment to excellence is evident in every aspect of our USPS
+						operations, from strategic route planning to personalized service delivery.
 					</p>
 					<p>
-						At Buraq Global Logistics, we pride ourselves on our ability to meet diverse logistical needs
-						with agility and precision. Whether it's short-haul trucking within a 150-mile radius or
-						long-haul freight shipping across the lower 48 contiguous states, our experienced team is
-						equipped to handle every aspect of the supply chain. We understand the importance of timely
-						deliveries, cost-effective solutions, and above all, maintaining the highest standards of safety
-						and compliance.
+						At Buraq Global Logistics, we pride ourselves on our ability to provide specialized
+						transportation solutions with precision and reliability. As an exclusive service provider for
+						the United States Postal Service (USPS), our experienced team is equipped to handle the critical
+						aspects of mail and package delivery logistics. We understand the importance of timely
+						deliveries, operational efficiency, and maintaining the highest standards of safety and
+						compliance in postal service operations.
 					</p>
 					<p>
 						Driven by a passion for innovation and sustainability, Buraq Global Logistics integrates
@@ -40,11 +38,11 @@ const AboutUsSectionBottom = () => {
 					</p>
 					<p>
 						As a customer-centric organization, Buraq Global Logistics places great emphasis on building
-						strong and enduring relationships. We value transparency, reliability, and integrity in every
-						interaction, ensuring that our clients receive nothing short of exceptional service. Whether
-						you're a small business looking for reliable logistics support or a large corporation needing
-						customized freight solutions, Buraq Global Logistics is here to exceed your expectations and
-						deliver results that matter.
+						strong and enduring relationships with USPS and the communities we serve. We value transparency,
+						reliability, and integrity in every interaction, ensuring exceptional service in all postal
+						delivery operations. As the exclusive transportation partner for USPS, Buraq Global Logistics is
+						committed to exceeding service expectations and delivering results that connect communities
+						across America.
 					</p>
 					<GetInTouchButton to="/contact">Get in touch</GetInTouchButton>
 				</AboutUsSectionBottomLeft>
